@@ -1,0 +1,10 @@
+name = "movie-community"
+compatibility_date = "2026-06-30"
+pages_build_output_dir = "public"
+
+# D1 바인딩. Functions 안에서 env.DB 로 접근한다.
+# database_id 는 `wrangler d1 create movie-community-db` 실행 후 출력값으로 교체할 것.
+[[d1_databases]]
+binding = "DB"
+database_name = "movie-community-db"
+database_id = "00000000-0000-0000-0000-000000000000"
